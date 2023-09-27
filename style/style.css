@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Anton&family=Catamaran:wght@200;300;400&family=Dancing+Script&family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@800&family=Poppins:wght@200;300&family=Ruda:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Inter:wght@900&family=Anton&family=Catamaran:wght@200;300;400&family=Dancing+Script&family=Inter:wght@400;500;600;700;800&family=Open+Sans:wght@800&family=Poppins:wght@200;300&family=Ruda:wght@400;500;600;700;800;900&display=swap');
 
 
 *:root{
@@ -15,13 +15,6 @@
 
 body{
     font-family: 'Anonymous Pro', monospace;
-font-family: 'Anton', sans-serif;
-font-family: 'Catamaran', sans-serif;
-font-family: 'Dancing Script', cursive;
-font-family: 'Inter', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Ruda', sans-serif;
 }
 
 
@@ -29,7 +22,9 @@ font-family: 'Ruda', sans-serif;
     position: relative;
     height: 100vh;
     background-color: var(--clr-bg);
+    overflow: hidden;
 }
+
 
 .line-left{
     position: absolute;
@@ -56,29 +51,52 @@ section{
 .img{
     width: 50%;
     height: 100%;
-
+    
 }
 
 .img1>img, .img2>img{
     
     width: 100%;
-    height: 100%;
+    height: 100%; 
+    /* object-fit: cover; */
+    
 }
 
 .artic1{
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     height: 100%;
     float: right;
-    background-color: black;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    
 }
 
 .artic2{
+    display: flex;
+    flex-direction: column;
+
+    padding: 5rem 3rem 4rem 3rem;
     width: 50%;
-    height: 100%;
-    background-color: orange;
+    height: 100%;   
+    
 }
 
-.bott img2{
+.artic2>span:nth-child(-n+5){
+    
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+.artic2>span:last-child{
+    margin-top: 1rem;
+}
+
+.bott .img2{
     float: right;
 }
